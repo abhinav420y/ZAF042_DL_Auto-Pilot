@@ -10,28 +10,27 @@ We use a deep neural network model based on the NVIDIA architecture for training
 ## Preprocessing
 Before training the model, we preprocess the images by performing the following steps:
 
-Crop the top and bottom of the image to remove unnecessary features
-Convert the image to YUV color space
-Apply Gaussian blur
-Resize the image to a smaller size for easier processing
-Normalize the pixel values to be between 0 and 1
-Training
+- Crop the top and bottom of the image to remove unnecessary features
+- Convert the image to YUV color space
+- Apply Gaussian blur
+- Resize the image to a smaller size for easier processing
+- Normalize the pixel values to be between 0 and 1
+
+## Training
 We train the model using a subset of the dataset, with 80% of the data used for training and 20% for validation. We use the Adam optimizer and mean squared error loss function. We also use early stopping to prevent overfitting.
 
-Results
+## Results
 The model achieves an accuracy of X% on the validation set, with an average mean squared error of Y. We also evaluate the model on a separate test set and achieve an accuracy of Z% with an average mean squared error of W.
 
-Usage
+## Usage
 To use the model for prediction, you can load the saved model weights and use the predict function to get steering angle values for new images.
 
-Requirements
-Python 3
-Keras
-TensorFlow
-NumPy
-OpenCV
-Authors
-John Doe
-Jane Doe
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+## Requirements
+- Python 3
+- Keras
+- TensorFlow
+- NumPy
+- OpenCV
+
+## Authors
+KLAU-S
